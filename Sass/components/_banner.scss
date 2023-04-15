@@ -1,0 +1,194 @@
+/*banner part start-------------*/
+#banner{
+    padding:50px 0;
+    background: url(../images/bg-2.png) no-repeat center/cover;
+    position: relative;
+    z-index: 0;
+    .customar{
+        .customar_rating{
+            margin: 10px 0;
+            i{
+                color:$deepYellow;
+                font-size: 18px;
+            }
+        }
+        .trustee{
+            font-size: 16px;
+            font-weight: 500;
+            color:$ancor;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+    }
+    .envato{
+
+        img{
+            margin: 10px 0;
+            width: 20px;
+
+        }
+        .envato{
+            font-size: 16px;
+            font-weight: 500;
+            color:$ancor;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+
+        }
+    }
+    .dremType{
+        .dream_H0{
+            display: inline-block;
+            font-size: 72px;
+            line-height: 1.2;
+            color:$ancor;
+            font-weight: 700;
+            word-break: break word;
+            .slide{
+                display: inline-block;
+                font-size: 72px;
+                color:$ancor;
+                font-weight: 700;
+                word-break: break word;
+                flex-direction: column;
+                .school{
+                    height: 100px;
+                    display: none;
+                    background: linear-gradient(90deg, rgba(255, 0, 0, 0.993),rgb(0, 128, 0));
+                    background-clip: text;
+                    -webkit-text-fill-color: rgba(6, 6, 6, 0.01);
+                    text-transform: capitalize;
+                    font-size: 72px;
+                }
+                .school.active{
+                    display: block;
+                }
+            }
+        }
+    }
+    /*--studu banner----------*/
+    .studyBanner{
+        width: 100%;
+        display: block;
+        position: relative;
+        .float{
+            display: inline-block;
+            width: 60px;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .fl1{
+            display: inline-block;
+            width: 80px;
+            position: absolute;
+            left: 90%;
+            top: 0;
+        }
+        .fl2{
+            display: inline-block;
+            width: 80px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            right:100%;
+            top:82%;
+        }
+        .fl3{
+            display: inline-block;
+            width: 140px;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            left: 78%;
+            top: 78%;
+        }
+        .fl4{
+            display: inline-block;
+            width: 55px;
+            height: 80%;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            left: 94%;
+            top: 10%;
+        }
+        .fl5{
+            display: inline-block;
+            width: 800px;
+            position: absolute;
+            left: -80%;
+            top: -10%;
+        }
+    }
+    .b_card{
+        display: block;
+        background: rgb(15, 35, 186);
+        border-radius: 20px;
+        margin: 50px 0;
+        z-index: 55;
+        .col-lg-3{
+            border-right: 1px solid #ffffff1a;
+        }
+        .bannerCard{
+            display: block;
+            width: 100%;
+            padding: 100px;
+            padding: 30px;
+            border-radius: 20px;
+            background: transparent;
+            transition: all linear .3s;
+            position: relative;
+            z-index: 500;
+            img{
+                width: 70px;
+                margin-bottom: 20px;
+            }
+            p.p18{
+                @include p18;
+                color:$white;
+            }
+            p.p16{
+                @include p16;
+                color:$samewhite;
+            }
+            &:hover{
+                margin-top: -20px;
+                background: #07084b;
+                transform: scale(1.03);
+            }
+        }
+        .bannerCard.service__style--1::after{
+            content: "";
+            width: 80%;
+            height: 50%;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #333;
+            bottom: 18px;
+            border-radius: 0;
+            filter: blur(10px);
+            opacity: 0;
+            transition: 0.3s;
+            z-index: 0;
+        }
+        .bannerCard.service__style--1:hover::after{
+            opacity: 1;
+        }
+    }
+    &::after{
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        content: "";
+        background: url(../images/banner-bg-shape-1.svg) no-repeat center/cover;
+        width: 100%;
+        height: 145px;
+        display: block;
+        z-index: -1;
+    }
+}
+/*banner part end---------------*/
+
+

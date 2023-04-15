@@ -1,0 +1,51 @@
+#features{
+    padding: 50px 0;
+    .fetureHeading{
+        text-align: center;
+        h4{
+            @include h4;
+        }
+        h2{
+            @include h2;
+        }
+    }
+    .feature_item{
+        padding-top: 50px;
+        text-align: center;
+        div{
+            width: 60%;
+            background: $white;
+            border-radius: 50%;
+            box-shadow: 0 0 10px 1px $samewhite;
+            display: grid;
+            place-items: center;
+            margin: 10px auto;
+            img{
+                width: 100%;
+            }
+        }
+        .smImg{
+            width: 40%;
+        }
+        .title{
+            text-transform: capitalize;
+            font-size: 20px;
+            font-weight: 600;
+            color:$ancor;
+            letter-spacing: .02rem;
+        }
+        .rbt-badge{
+            text-transform: capitalize;
+            font-size: 14px;
+            font-weight: 400;
+            color:$samewhite;
+            letter-spacing: .05rem;
+            background: $samewhitetr;
+            padding: 3px 7px;
+            border-radius: 7px;
+        }
+    }
+    .fi_top{
+        margin-top: -40px;
+    }
+}

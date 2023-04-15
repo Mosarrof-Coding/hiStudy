@@ -1,0 +1,56 @@
+/*tamplate part start--------------*/
+#tamplate{
+    .tamplateHeading{
+        text-align: center;
+        h4{
+            @include h4;
+        }
+        h2{
+            @include h2;
+        }
+    }
+    .tampcard{
+        background: linear-gradient(151.71deg, #29C986 0%, #2FC8E5 100%) !important;
+        padding: 30px 25px;
+        margin: 20px 0;
+        border-radius: 20px;
+        display: block;
+        width: 100%;
+        text-align: center;
+        position: relative;
+        .sunlight{
+            position: absolute;
+            left: 58%;
+            top: -1%;
+            display: block;
+            z-index: 99;
+        }
+        .spa14{
+            @include spa14;
+        }
+        h4{
+            @include cardh4;
+        }
+        img{
+            display: block;
+            margin-bottom: 20px;
+            margin: auto;
+        }
+        ul{
+            li{
+                font-size: 14px;
+                font-weight: 400;
+                text-transform: capitalize;
+                color:$samewhite;
+                margin: 0 24px;
+            }
+        }
+    }
+    .plate2{
+        background: linear-gradient(151.71deg, #FF652D 0%, #FFA426 100%) !important;
+    }
+    .plate3{
+        background: linear-gradient(151.71deg, #30C4FF 0%, #7259FF 100%) !important;
+    }
+}
+/*tamplate part end----------------*/

@@ -1,0 +1,60 @@
+@import "../variable/variable";
+@import "../mixins/mixin";
+/*navbar part start--------------*/
+.navbar{
+    z-index: 999;
+    .navbar-brand{
+        padding: 0 !important;
+        img{
+
+        }
+    }
+    .meToggler{
+        .mytggle{
+
+        }
+    }
+    .me_collepse{
+        .me_nav_ul{
+            .me_item_li{
+                .me_link_a{
+                    display: inline-block;
+                    padding: 20px 0;
+                    margin: 0 20px;
+                    text-transform: capitalize;
+                }
+            }
+        }
+        .marqueBox{
+            width: 150px;
+            height: 40px;
+            background: linear-gradient(90deg, #CFA2E8, #637FEA);
+            border-radius: 20px;
+            overflow: hidden;
+            position: relative;
+            .overlap{
+                top: 3px;
+                left: 3px;
+                border-radius: 20px;
+                position: absolute;
+                background: #fff;
+                width: calc(100% - 6px);
+                height: calc(100% - 6px);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .martxt{
+                display: inline-block;
+                color:$ancor;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 1;
+                text-transform: capitalize;
+                transition: 0.3s;
+                margin-bottom: 0 !important;
+            }
+        }
+    }
+}
+/*navbar part end----------------*/

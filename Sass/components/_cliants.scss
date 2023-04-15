@@ -1,0 +1,11 @@
+#cliants{
+    .cliants_heading{
+        text-align: center;
+        h4{
+            @include h4;
+        }
+        h2{
+            @include h2;
+        }
+    }
+}

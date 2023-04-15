@@ -1,0 +1,150 @@
+#demo{
+    padding: 100px 0;
+    .numbertitle{
+        position: relative;
+        &::after{
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%);
+            content: "15+";
+            font-size: 600px;
+            line-height: .8;
+            font-weight: 700;
+            background: linear-gradient(180deg, $samewhite, #ffffff00);
+            background-clip: text;
+            -webkit-text-fill-color: #00000000;
+            z-index: -1;
+        }
+        .demo_counter{
+            text-align: center;
+            .clip{
+                display: inline-block;
+                font-size: 60px;
+                text-transform: capitalize;
+                font-weight: 900;
+                letter-spacing: .05rem;
+                line-height: 1.2;
+                background: linear-gradient(90deg, $green,$deepYellow);
+                margin-bottom: 20px;
+                background-clip: text;
+                -webkit-text-fill-color: #ffffff00;
+            }
+            h3{
+                margin-bottom: 20px;
+                @include h3;
+                font-weight: 600;
+                color:$ancor;
+                .gray{
+                    color:$samewhite;
+                }
+            }
+            p.p18{
+                @include p18;
+                padding-bottom: 30px;
+            }
+            .downBtn{
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+                background: linear-gradient(180deg, $green, $deepYellow);
+                border: none;
+                transition: all linear .3s;
+                animation: mor 2s alternate infinite;
+                i{
+                    color:$white;
+                    font-size: 20px;
+
+                }
+            }
+            @keyframes mor {
+                0%{
+                    transform: translateY(-10px);
+                }
+                100%{
+                    transform: translateY(10px);
+                }
+            }
+        }
+    }
+    .venobtn{
+        width: 100%;
+        margin: 50px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        .bigBtn{
+            @include bigBtn;
+            position: relative;
+            padding: 10px 20px !important;
+            .item15{
+                position: absolute;
+                right: 8%;
+                top: 5%;
+                display: inline-block;
+                font-size: 12px;
+                font-weight: 200;
+                color:$green;
+            }
+            &:hover{
+                .item15{
+                    color:$white;
+                }
+            }
+        }
+    }
+    .demoItem{
+        width: 100%;
+        display: block;
+        position: relative;
+        transition: all linear .3s;
+        img{
+            width: 100%;
+        }
+        .mobileView{
+            max-width: 200px;
+            padding: 20px 5px;
+            background: rgb(53, 25, 45);
+            position: absolute;
+            right: -5%;
+            top: 15%;
+            display: inline-block;
+            box-shadow: -1px 1px 5px 0px #464646;
+            border-radius: 10px;
+            transition: all linear .3s;
+            img{
+                width: 100%;
+            }
+            &::after{
+                position: absolute;
+                content: "";
+                left: 50%;
+                top:3%;
+                transform: translateX(-50%);
+                width: 20px;
+                height: 3px;
+                border-radius: 2px;
+                box-shadow: inset 0 0 2px 1px $samewhite;
+            }
+            &::before{
+                position: absolute;
+                content: "";
+                left: 50%;
+                bottom:.5%;
+                transform: translateX(-50%);
+                width: 15px;
+                height: 15px;
+                border-radius:50%;
+                background: linear-gradient(90deg,#2d2d2d, #575757);
+            }
+        }
+        &:hover{
+            transform: translateY(-5px);
+            .mobileView{
+                top: 10%;
+                
+            }
+        }
+    }
+}

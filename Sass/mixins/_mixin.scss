@@ -1,0 +1,91 @@
+@import "../variable/variable";
+@mixin p16{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.45;
+    text-transform: capitalize;
+    list-style: .03rem;
+}
+@mixin p18{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.45;
+    text-transform: capitalize;
+    list-style: .03rem;
+}
+@mixin spa14{
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.45;
+    color:$white;
+    text-transform: uppercase;
+    list-style: .03rem;
+    margin-bottom: 14px;
+}
+@mixin h2{
+    font-size: 32px;
+    font-weight: 700;
+    color: #170909;
+    letter-spacing: 0.05rem;
+    line-height: 1.3;
+    text-transform: capitalize;
+    .h2{
+        font-size: 32px;
+        font-weight: 700;
+        color: #170909;
+        letter-spacing: 0.05rem;
+        line-height: 1.3;
+        text-transform: capitalize;
+        background: linear-gradient(90deg, red ,green);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: rgba(255, 255, 255, 0.001);
+    }
+}
+@mixin h3{
+    text-transform: capitalize;
+    color:$white;
+}
+@mixin h4{
+    font-size: 14px;
+    line-height: 15px;
+    font-weight: 500;
+    color: $h4;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 100px;
+    text-transform: uppercase;
+    display: inline-block;
+    background:$h4back;
+}
+@mixin cardh4{
+    font-size: 24px;
+    font-weight: 700;
+    color: $white;
+    letter-spacing: .03rem;
+    text-transform: capitalize;
+    display: inline-block;
+}
+@mixin bigBtn{
+    padding: 20px 30px;
+    display: inline-block;
+    border-radius: 50px;
+    background: $samewhitetr;
+    margin: 10px;
+    color:$ancor;
+    text-transform: capitalize;
+    i{
+        display: inline-block;
+        margin-right: 10px;
+        color:$ancor;
+    }
+    &:hover{
+        background: $green;
+        color:$white;
+        i{
+            color:$white;
+        }
+    }
+}

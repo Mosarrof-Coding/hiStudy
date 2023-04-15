@@ -1,0 +1,54 @@
+#top_notch_feature{
+    padding: 100px 0;
+    .notch_heading{
+        text-align: center;
+        h4{
+            @include h4;
+        }
+        h2{
+            @include h2;
+        }
+        .p16{
+            @include p18;
+        }
+    }
+    .notch_item{
+        background: linear-gradient(90deg, rgb(86, 79, 189),rgb(156, 95, 155));
+        padding: 30px 0 5px 30px;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-top: 30px;
+        h5{
+            text-transform: capitalize;
+            color:$white;
+        }
+        .p16{
+            @include p16;
+            color:$samewhite;
+        }
+    }
+    .notch_item1{
+        padding: 30px;
+        display: flex;
+        flex-direction: column-reverse;
+        img{
+            display: block;
+            margin-bottom: 20px;
+        }
+    }
+    .notch_item2{
+        background: url(../images/feature-01.jpg) no-repeat center/cover;
+        width: 100%;
+        height: 100%;
+        padding: 350px 20px 10px;
+        position: relative;
+        margin-bottom: 30px;
+        .f6{
+            position: absolute;
+            left: 40%;
+            top: 20%;
+            width: 400px;
+            z-index: 99;
+        }
+    }
+}

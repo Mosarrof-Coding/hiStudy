@@ -1,0 +1,97 @@
+#customise{
+    .customeHeading{
+        text-align: center;
+        h4{
+            @include h4;
+        }
+        h2{
+            @include h2;
+            .h2{
+                display: inline-block;
+                background: linear-gradient(to right, red,green);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+        p.txt18{
+            @include p18;
+        }
+    }
+    .layout_main{
+        background: linear-gradient(180deg, #e5e5e5, #fff);
+        border-radius: 20px;
+        padding: 100px;
+        .layout{
+            h4{
+                @include h4;
+            }
+            h2{
+                @include h2;
+            }
+            .ready{
+                padding-left: 0 !important;
+                margin-top: 20px;
+                .ready_li{
+                    display: flex;
+                    align-items: center;
+                    padding:10px 20px;
+                    background: $samewhite;
+                    border-radius: 20px;
+                    margin: 5px 0;
+                    .cardh4{
+                        @include cardh4;
+                        color: $ancor;
+                        font-size: 20px;
+                        background: none;
+                        margin-bottom: 0 !important;
+                    }
+                    i{
+                        font-size: 20px;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+        .courses_layout{
+            .cl-png{
+                display: none;
+            }
+            .cl-png.active{
+                display: block;
+            }
+        }
+        .block{
+            width: 80%;
+            display: block;
+            margin: 0 auto;
+            .checking{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+                gap:50px;
+                margin-top: 50px;
+                .checkmark{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap:10px;
+                    p.p16{
+                        @include p16;
+                    }
+                    i{
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 50%;
+                        background: $green;
+                        display: grid;
+                        place-items: center;
+                        font-size: 14px;
+                        color:$white;
+                    }
+                }
+            }
+        }
+    }
+}

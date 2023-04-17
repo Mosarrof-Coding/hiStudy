@@ -35,6 +35,12 @@
             font-weight: 500;
             color:$ancor;
             text-transform: capitalize;
+            &:hover{
+                background: $green;
+                color:$white;
+                transition: transform 0.6s 0.125s cubic-bezier(0.1, 0.75, 0.25, 1);
+                box-shadow: 6px 3px 21px 1px #68696a83;
+            }
         }
         .vloi{
             display: block;

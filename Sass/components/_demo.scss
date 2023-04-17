@@ -8,7 +8,7 @@
             top: 0;
             transform: translateX(-50%);
             content: "15+";
-            font-size: 600px;
+            font-size: 500px;
             line-height: .8;
             font-weight: 700;
             background: linear-gradient(180deg, $samewhite, #ffffff00);
@@ -93,6 +93,10 @@
                 }
             }
         }
+        .active{
+            background: $green !important;
+            color:$white;
+        }
     }
     .demoItem{
         width: 100%;
@@ -143,8 +147,10 @@
             transform: translateY(-5px);
             .mobileView{
                 top: 10%;
-                
             }
         }
+    }
+    .tile{
+        display: none;
     }
 }

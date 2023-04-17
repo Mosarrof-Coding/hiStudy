@@ -21,11 +21,9 @@
         }
     }
     .envato{
-
         img{
             margin: 10px 0;
             width: 20px;
-
         }
         .envato{
             font-size: 16px;
@@ -33,7 +31,6 @@
             color:$ancor;
             text-transform: uppercase;
             letter-spacing: 0.5px;
-
         }
     }
     .dremType{
@@ -123,58 +120,64 @@
     }
     .b_card{
         display: block;
-        background: rgb(15, 35, 186);
+        background: $green;
         border-radius: 20px;
         margin: 50px 0;
         z-index: 55;
         .col-lg-3{
             border-right: 1px solid #ffffff1a;
-        }
-        .bannerCard{
-            display: block;
-            width: 100%;
-            padding: 100px;
-            padding: 30px;
-            border-radius: 20px;
-            background: transparent;
-            transition: all linear .3s;
             position: relative;
-            z-index: 500;
-            img{
-                width: 70px;
-                margin-bottom: 20px;
+            z-index: 0;
+            &::after{
+                content: "";
+                width: 80%;
+                height: 50%;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                background: #333;
+                bottom: 18px;
+                border-radius: 0;
+                filter: blur(20px);
+                transition: 0.3s;
+                opacity: 0;
+                visibility: hidden;
+                z-index: -1;
             }
-            p.p18{
-                @include p18;
-                color:$white;
-            }
-            p.p16{
-                @include p16;
-                color:$samewhite;
+            .bannerCard{
+                display: block;
+                width: 100%;
+                padding: 100px;
+                padding: 30px;
+                border-radius: 20px;
+                background: transparent;
+                transition: all linear .3s;
+                cursor: pointer;
+                z-index: 1;
+                img{
+                    width: 70px;
+                    margin-bottom: 20px;
+                }
+                p.p18{
+                    @include p18;
+                    color:$white;
+                }
+                p.p16{
+                    @include p16;
+                    color:$samewhite;
+                }
             }
             &:hover{
-                margin-top: -20px;
-                background: #07084b;
-                transform: scale(1.03);
+                .bannerCard{
+                    margin-top: -20px;
+                    transform: scale(1.03);
+                    background: $ancor;
+                }
+                &::after{
+                    opacity: 1;
+                    visibility: visible;
+                }
             }
-        }
-        .bannerCard.service__style--1::after{
-            content: "";
-            width: 80%;
-            height: 50%;
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            background: #333;
-            bottom: 18px;
-            border-radius: 0;
-            filter: blur(10px);
-            opacity: 0;
-            transition: 0.3s;
-            z-index: 0;
-        }
-        .bannerCard.service__style--1:hover::after{
-            opacity: 1;
         }
     }
     &::after{

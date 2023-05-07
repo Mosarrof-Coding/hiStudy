@@ -16,18 +16,18 @@
         position: relative;
         margin: 50px 0;
         &::after{
-            width: 200px;
+            width: 10%;
             height: 300px;
-            background: linear-gradient(90deg, #fff 100px, #ffffff00);
+            background: linear-gradient(90deg, #fff, #ffffff00);
             position: absolute;
             content: "";
             left: 0;
             top: 0;
         }
         &::before{
-            width: 200px;
+            width: 10%;
             height: 300px;
-            background: linear-gradient(90deg, #ffffff00,#ffffff 100px);
+            background: linear-gradient(90deg, #ffffff00,#ffffff);
             position: absolute;
             content: "";
             right: 0;
@@ -41,13 +41,17 @@
             right: 0;
             width: 500%;
             height: 100px;
-            display: block;
-            background-repeat: repeat-x !important;
+            display: flex;
             animation: anim 80s linear infinite;
+            background-repeat: repeat-x;
             .animLi{
+                display: inline-flex;
                 .animAncor{
-                    padding: 20px 30px;
-                    display: inline-block;
+                    width: 150px;
+                    height: 50px;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
                     border-radius: 50px;
                     background: $samewhitetr;
                     margin: 10px;
@@ -69,26 +73,12 @@
             }
         }
         .ul2{
-            position: absolute;
-            left: 0;
             top:100px;
-            right: 0;
-            width: 500%;
-            height: 100px;
-            display: block;
-            background-repeat: repeat-x !important;
             animation: anim1 60s linear infinite;
         }
         .ul3{
-            position: absolute;
-            left: 0;
             top:200px;
-            right: 0;
-            width: 500%;
-            height: 100px;
-            display: block;
-            background-repeat: repeat-x !important;
-            animation: anim2 40s linear infinite;
+            animation: anim2 45s linear infinite;
         }
         @keyframes anim {
             100%{

@@ -9,18 +9,17 @@
         }
     }
     .param{
-        display: flex;
+        display: block;
         overflow-x: hidden;
         .animat2{
             display: flex;
+            flex-wrap: nowrap;
             width: 500%;
             animation: rightt 40s linear infinite;
-            background-position: left;
-            background-repeat: repeat-x;
             margin: 5px 0;
             .clientItem{
                 margin: 0 5px;
-                width: 500px;
+                max-width: 500px;
                 text-align: center;
                 padding:40px 20px;
                 box-shadow: 0 0 5px 1px #dddddd;
@@ -80,7 +79,6 @@
     .param2{
         display: flex;
         overflow-x: hidden;
-        background-position: right;
         .animat2{
             display: flex;
             width: 500%;

@@ -250,7 +250,7 @@
   font-weight: 500;
   color: #b966e7;
   display: inline-block;
-  padding: 10px 20px;
+  padding: 10px 20px 9px 20px;
   border-radius: 100px;
   text-transform: uppercase;
   display: inline-block;
@@ -317,6 +317,9 @@
   margin-bottom: 20px;
   margin: auto;
 }
+#tamplate .tampcard ul {
+  padding-left: 0;
+}
 #tamplate .tampcard ul li {
   font-size: 14px;
   font-weight: 400;
@@ -341,7 +344,7 @@
   font-weight: 500;
   color: #b966e7;
   display: inline-block;
-  padding: 10px 20px;
+  padding: 10px 20px 9px 20px;
   border-radius: 100px;
   text-transform: uppercase;
   display: inline-block;
@@ -372,6 +375,7 @@
   display: inline-block;
   background: linear-gradient(to right, red, green);
   -webkit-background-clip: text;
+          background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 #customise .customeHeading p.txt18 {
@@ -384,7 +388,8 @@
 #customise .layout_main {
   background: linear-gradient(180deg, #e5e5e5, #fff);
   border-radius: 20px;
-  padding: 100px;
+  padding: 10%;
+  margin: 50px 0;
 }
 #customise .layout_main .layout h4 {
   font-size: 14px;
@@ -392,7 +397,7 @@
   font-weight: 500;
   color: #b966e7;
   display: inline-block;
-  padding: 10px 20px;
+  padding: 10px 20px 9px 20px;
   border-radius: 100px;
   text-transform: uppercase;
   display: inline-block;
@@ -503,7 +508,7 @@
   font-weight: 500;
   color: #b966e7;
   display: inline-block;
-  padding: 10px 20px;
+  padding: 10px 20px 9px 20px;
   border-radius: 100px;
   text-transform: uppercase;
   display: inline-block;
@@ -538,18 +543,18 @@
   margin: 50px 0;
 }
 #plugin .animBtn::after {
-  width: 200px;
+  width: 10%;
   height: 300px;
-  background: linear-gradient(90deg, #fff 100px, rgba(255, 255, 255, 0));
+  background: linear-gradient(90deg, #fff, rgba(255, 255, 255, 0));
   position: absolute;
   content: "";
   left: 0;
   top: 0;
 }
 #plugin .animBtn::before {
-  width: 200px;
+  width: 10%;
   height: 300px;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0), #ffffff 100px);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0), #ffffff);
   position: absolute;
   content: "";
   right: 0;
@@ -563,13 +568,19 @@
   right: 0;
   width: 500%;
   height: 100px;
-  display: block;
-  background-repeat: repeat-x !important;
+  display: flex;
   animation: anim 80s linear infinite;
+  background-repeat: repeat-x;
+}
+#plugin .animBtn .animUl .animLi {
+  display: inline-flex;
 }
 #plugin .animBtn .animUl .animLi .animAncor {
-  padding: 20px 30px;
-  display: inline-block;
+  width: 150px;
+  height: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 50px;
   background: #f4f4f4;
   margin: 10px;
@@ -589,26 +600,12 @@
   color: #ffffff;
 }
 #plugin .animBtn .ul2 {
-  position: absolute;
-  left: 0;
   top: 100px;
-  right: 0;
-  width: 500%;
-  height: 100px;
-  display: block;
-  background-repeat: repeat-x !important;
   animation: anim1 60s linear infinite;
 }
 #plugin .animBtn .ul3 {
-  position: absolute;
-  left: 0;
   top: 200px;
-  right: 0;
-  width: 500%;
-  height: 100px;
-  display: block;
-  background-repeat: repeat-x !important;
-  animation: anim2 40s linear infinite;
+  animation: anim2 45s linear infinite;
 }
 @keyframes anim {
   100% {
@@ -725,8 +722,9 @@
   padding: 20px 30px;
   display: inline-block;
   border-radius: 50px;
+  border: 2px solid #7E63F6;
   background: #f4f4f4;
-  margin: 10px;
+  margin: 5px;
   color: #192335;
   text-transform: capitalize;
   position: relative;
@@ -765,24 +763,28 @@
   display: block;
   position: relative;
   transition: all linear 0.3s;
+  border-radius: 10px;
 }
 #demo .demoItem img {
   width: 100%;
+  display: block;
 }
 #demo .demoItem .mobileView {
-  max-width: 200px;
-  padding: 20px 5px;
+  width: 30%;
+  padding: 5% 2px;
   background: rgb(53, 25, 45);
   position: absolute;
   right: -5%;
-  top: 15%;
+  top: 50%;
+  transform: translateY(-50%);
   display: inline-block;
   box-shadow: -1px 1px 5px 0px #464646;
-  border-radius: 10px;
+  border-radius: 5%;
   transition: all linear 0.3s;
 }
 #demo .demoItem .mobileView img {
   width: 100%;
+  display: block;
 }
 #demo .demoItem .mobileView::after {
   position: absolute;
@@ -799,18 +801,20 @@
   position: absolute;
   content: "";
   left: 50%;
-  bottom: 0.5%;
+  bottom: 0.7%;
   transform: translateX(-50%);
-  width: 15px;
-  height: 15px;
+  width: 13%;
+  height: 6%;
   border-radius: 50%;
   background: linear-gradient(90deg, #2d2d2d, #575757);
 }
 #demo .demoItem:hover {
   transform: translateY(-5px);
+  box-shadow: 1px 3px 7px 1px #e1e1e1;
 }
 #demo .demoItem:hover .mobileView {
-  top: 10%;
+  top: 50%;
+  transform: translateY(-60%);
 }
 #demo .tile {
   display: none;
@@ -828,7 +832,7 @@
   font-weight: 500;
   color: #b966e7;
   display: inline-block;
-  padding: 10px 20px;
+  padding: 10px 20px 9px 20px;
   border-radius: 100px;
   text-transform: uppercase;
   display: inline-block;
@@ -931,7 +935,7 @@
   font-weight: 500;
   color: #b966e7;
   display: inline-block;
-  padding: 10px 20px;
+  padding: 10px 20px 9px 20px;
   border-radius: 100px;
   text-transform: uppercase;
   display: inline-block;
@@ -966,6 +970,7 @@
   list-style: 0.03rem;
 }
 #course_showcase .CS_heading .courseInner img {
+  width: 100%;
   background: transparent;
 }
 #course_showcase .CS_heading .csUl .Csli {
@@ -1007,7 +1012,7 @@
   display: block;
   margin: 0 auto;
   background: url(../images/map.png) no-repeat center/cover;
-  padding: 50px 0;
+  padding-top: 50px;
 }
 #glob_trusted .glob-hading .globtxt {
   font-size: 60px;
@@ -1091,7 +1096,7 @@
   font-weight: 500;
   color: #b966e7;
   display: inline-block;
-  padding: 10px 20px;
+  padding: 10px 20px 9px 20px;
   border-radius: 100px;
   text-transform: uppercase;
   display: inline-block;
@@ -1132,6 +1137,9 @@
   overflow: hidden;
   margin-top: 30px;
 }
+#top_notch_feature .notch_item img {
+  width: 100%;
+}
 #top_notch_feature .notch_item h5 {
   text-transform: capitalize;
   color: #ffffff;
@@ -1153,21 +1161,6 @@
   display: block;
   margin-bottom: 20px;
 }
-#top_notch_feature .notch_item2 {
-  background: url(../images/feature-01.jpg) no-repeat center/cover;
-  width: 100%;
-  height: 100%;
-  padding: 350px 20px 10px;
-  position: relative;
-  margin-bottom: 30px;
-}
-#top_notch_feature .notch_item2 .f6 {
-  position: absolute;
-  left: 40%;
-  top: 20%;
-  width: 400px;
-  z-index: 99;
-}
 
 #cliants .cliants_heading {
   text-align: center;
@@ -1178,7 +1171,7 @@
   font-weight: 500;
   color: #b966e7;
   display: inline-block;
-  padding: 10px 20px;
+  padding: 10px 20px 9px 20px;
   border-radius: 100px;
   text-transform: uppercase;
   display: inline-block;
@@ -1206,20 +1199,19 @@
   -webkit-text-fill-color: rgba(255, 255, 255, 0.001);
 }
 #cliants .param {
-  display: flex;
+  display: block;
   overflow-x: hidden;
 }
 #cliants .param .animat2 {
   display: flex;
+  flex-wrap: nowrap;
   width: 500%;
   animation: rightt 40s linear infinite;
-  background-position: left;
-  background-repeat: repeat-x;
   margin: 5px 0;
 }
 #cliants .param .animat2 .clientItem {
   margin: 0 5px;
-  width: 500px;
+  max-width: 500px;
   text-align: center;
   padding: 40px 20px;
   box-shadow: 0 0 5px 1px #dddddd;
@@ -1279,7 +1271,6 @@
 #cliants .param2 {
   display: flex;
   overflow-x: hidden;
-  background-position: right;
 }
 #cliants .param2 .animat2 {
   display: flex;
@@ -1363,7 +1354,7 @@
   font-weight: 500;
   color: #b966e7;
   display: inline-block;
-  padding: 10px 20px;
+  padding: 10px 20px 9px 20px;
   border-radius: 100px;
   text-transform: uppercase;
   display: inline-block;
@@ -1391,6 +1382,360 @@
   -webkit-text-fill-color: rgba(255, 255, 255, 0.001);
 }
 
+@media (max-width: 575px) {
+  h1 {
+    font-size: 30px !important;
+  }
+  h2 {
+    font-size: 24px !important;
+  }
+  h2 .h2 {
+    font-size: 24px !important;
+  }
+  h3 {
+    font-size: 20px !important;
+  }
+  h4 {
+    font-size: 12px !important;
+  }
+  h5 {
+    font-size: 18px !important;
+  }
+  h6 {
+    font-size: 16px !important;
+  }
+  p {
+    font-size: 14px !important;
+  }
+  input {
+    padding: 5px 15px !important;
+  }
+  .dream_H0 {
+    font-size: 38px !important;
+  }
+  .school {
+    font-size: 38px !important;
+  }
+  .clip {
+    font-size: 38px !important;
+  }
+  .numbertitle::after {
+    font-size: 200px !important;
+  }
+  #demo .venobtn .bigBtn {
+    padding: 6px 10px !important;
+    font-size: 14px !important;
+  }
+  #demo .venobtn .bigBtn .item15 {
+    font-size: 8px !important;
+  }
+  .downBtn {
+    width: 50px !important;
+    height: 50px !important;
+  }
+  .mobileView {
+    right: -2% !important;
+  }
+  .feature_item {
+    margin-top: 0 !important;
+    display: block;
+    margin: 0 auto !important;
+  }
+  #course_showcase .leftSmall {
+    opacity: 0.2 !important;
+  }
+  #course_showcase .resp_clmn_rvrse {
+    display: flex !important;
+    flex-direction: column-reverse !important;
+  }
+  #course_showcase .slickImg img {
+    margin-left: 0 !important;
+  }
+  #course_showcase .Csli {
+    font-size: 16px !important;
+  }
+  #glob_trusted .globtxt {
+    font-size: 38px !important;
+  }
+  #glob_trusted .glTrusted {
+    padding: 7px 15px !important;
+    font-size: 14px !important;
+  }
+  #glob_trusted .vloi {
+    margin: 25px 0 0 0 !important;
+  }
+  #glob_trusted .support {
+    margin: 0 !important;
+    width: 100% !important;
+  }
+  .clientItem {
+    min-width: 300px !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  h1 {
+    font-size: 38px !important;
+  }
+  h2 {
+    font-size: 30px !important;
+  }
+  h2 .h2 {
+    font-size: 30px !important;
+  }
+  h3 {
+    font-size: 24px !important;
+  }
+  h5 {
+    font-size: 18px !important;
+  }
+  h6 {
+    font-size: 16px !important;
+  }
+  p {
+    font-size: 15px !important;
+  }
+  input {
+    padding: 5px 15px !important;
+  }
+  .dream_H0 {
+    font-size: 46px !important;
+  }
+  .school {
+    font-size: 46px !important;
+  }
+  .clip {
+    font-size: 46px !important;
+  }
+  .numbertitle::after {
+    font-size: 300px !important;
+  }
+  #demo .venobtn .bigBtn {
+    padding: 6px 10px !important;
+    font-size: 14px !important;
+  }
+  #demo .venobtn .bigBtn .item15 {
+    font-size: 8px !important;
+  }
+  .downBtn {
+    width: 60px !important;
+    height: 60px !important;
+  }
+  .mobileView {
+    right: -2% !important;
+  }
+  .feature_item {
+    margin-top: 0 !important;
+  }
+  #course_showcase .leftSmall {
+    opacity: 0.2 !important;
+  }
+  #course_showcase .resp_clmn_rvrse {
+    display: flex !important;
+    flex-direction: column-reverse !important;
+  }
+  #course_showcase .slickImg img {
+    margin-left: 0 !important;
+  }
+  #course_showcase .Csli {
+    font-size: 16px !important;
+  }
+  #glob_trusted .globtxt {
+    font-size: 46px !important;
+  }
+  #glob_trusted .glTrusted {
+    padding: 9px 15px !important;
+    font-size: 16px !important;
+  }
+  #glob_trusted .vloi {
+    margin: 30px 0 0 0 !important;
+  }
+  #glob_trusted .support {
+    margin: 0 !important;
+    width: 100% !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  h1 {
+    font-size: 48px !important;
+  }
+  h2 {
+    font-size: 30px !important;
+  }
+  h2 .h2 {
+    font-size: 30px !important;
+  }
+  h3 {
+    font-size: 28px !important;
+  }
+  h5 {
+    font-size: 20px !important;
+  }
+  h6 {
+    font-size: 18px !important;
+  }
+  p {
+    font-size: 16px !important;
+  }
+  input {
+    padding: 7px 15px !important;
+  }
+  .dream_H0 {
+    font-size: 56px !important;
+  }
+  .school {
+    font-size: 56px !important;
+  }
+  .clip {
+    font-size: 56px !important;
+  }
+  .numbertitle::after {
+    font-size: 400px !important;
+  }
+  #demo .venobtn .bigBtn {
+    padding: 8px 15px !important;
+    font-size: 14px !important;
+  }
+  #demo .venobtn .bigBtn .item15 {
+    font-size: 8px !important;
+  }
+  .downBtn {
+    width: 60px !important;
+    height: 60px !important;
+  }
+  .mobileView {
+    right: -2% !important;
+  }
+  #course_showcase .leftSmall {
+    opacity: 0.2 !important;
+  }
+  #course_showcase .resp_clmn_rvrse {
+    display: flex !important;
+    flex-direction: column-reverse !important;
+  }
+  #course_showcase .slickImg img {
+    margin-left: 0 !important;
+  }
+  #course_showcase .Csli {
+    font-size: 16px !important;
+  }
+  #glob_trusted .globtxt {
+    font-size: 56px !important;
+  }
+  #glob_trusted .glTrusted {
+    padding: 10px 17px !important;
+    font-size: 16px !important;
+  }
+  #glob_trusted .vloi {
+    margin: 30px 0 0 0 !important;
+  }
+  #glob_trusted .support {
+    margin: 0 !important;
+    width: 100% !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  h1 {
+    font-size: 48px !important;
+  }
+  h2 {
+    font-size: 30px !important;
+  }
+  h2 .h2 {
+    font-size: 30px !important;
+  }
+  h3 {
+    font-size: 28px !important;
+  }
+  h5 {
+    font-size: 20px !important;
+  }
+  h6 {
+    font-size: 18px !important;
+  }
+  p {
+    font-size: 16px !important;
+  }
+  input {
+    padding: 7px 15px !important;
+  }
+  .dream_H0 {
+    font-size: 56px !important;
+  }
+  .school {
+    font-size: 56px !important;
+  }
+  .clip {
+    font-size: 56px !important;
+  }
+  .numbertitle::after {
+    font-size: 400px !important;
+  }
+  #demo .venobtn .bigBtn {
+    padding: 8px 15px !important;
+    font-size: 14px !important;
+  }
+  #demo .venobtn .bigBtn .item15 {
+    font-size: 8px !important;
+  }
+  .downBtn {
+    width: 60px !important;
+    height: 60px !important;
+  }
+  .mobileView {
+    right: -2% !important;
+  }
+  #course_showcase .leftSmall {
+    opacity: 0.2 !important;
+  }
+  #course_showcase .resp_clmn_rvrse {
+    display: flex !important;
+    align-items: center !important;
+  }
+  #course_showcase .Csli {
+    font-size: 16px !important;
+  }
+  #glob_trusted .globtxt {
+    font-size: 50px !important;
+  }
+  #glob_trusted .glTrusted {
+    padding: 12px 20px !important;
+    font-size: 16px !important;
+  }
+  #glob_trusted .vloi {
+    margin: 30px 0 0 0 !important;
+  }
+  #glob_trusted .support {
+    margin: 0 !important;
+    width: 100% !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1319.98px) {
+  #course_showcase .leftSmall {
+    opacity: 0.2 !important;
+  }
+  #course_showcase .resp_clmn_rvrse {
+    display: flex !important;
+    align-items: center !important;
+  }
+  #glob_trusted .globtxt {
+    font-size: 60px !important;
+  }
+  #glob_trusted .glTrusted {
+    padding: 14px 30px !important;
+  }
+  #glob_trusted .vloi {
+    margin: 30px 0 0 0 !important;
+  }
+  #glob_trusted .support {
+    margin: 0 !important;
+    width: 100% !important;
+  }
+}
+@media (min-width: 1320px) {
+  #course_showcase .leftSmall {
+    opacity: 0.2 !important;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -1414,4 +1759,8 @@ p {
 
 img {
   vertical-align: middle;
+}
+
+html, body {
+  overflow-x: hidden;
 }/*# sourceMappingURL=style.css.map */

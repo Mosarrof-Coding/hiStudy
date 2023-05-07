@@ -18,6 +18,9 @@
         border-radius: 10px;
         overflow: hidden;
         margin-top: 30px;
+        img{
+            width: 100%;
+        }
         h5{
             text-transform: capitalize;
             color:$white;
@@ -34,21 +37,6 @@
         img{
             display: block;
             margin-bottom: 20px;
-        }
-    }
-    .notch_item2{
-        background: url(../images/feature-01.jpg) no-repeat center/cover;
-        width: 100%;
-        height: 100%;
-        padding: 350px 20px 10px;
-        position: relative;
-        margin-bottom: 30px;
-        .f6{
-            position: absolute;
-            left: 40%;
-            top: 20%;
-            width: 400px;
-            z-index: 99;
         }
     }
 }

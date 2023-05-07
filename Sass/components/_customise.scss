@@ -9,7 +9,7 @@
             .h2{
                 display: inline-block;
                 background: linear-gradient(to right, red,green);
-                -webkit-background-clip: text;
+                background-clip: text;
                 -webkit-text-fill-color: transparent;
             }
         }
@@ -20,7 +20,8 @@
     .layout_main{
         background: linear-gradient(180deg, #e5e5e5, #fff);
         border-radius: 20px;
-        padding: 100px;
+        padding: 10%;
+        margin: 50px 0;
         .layout{
             h4{
                 @include h4;

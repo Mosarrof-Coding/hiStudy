@@ -1,0 +1,398 @@
+@media (max-width: 575px) {
+    h1{
+        font-size: 30px !important;
+    }
+    h2{
+        font-size: 24px !important;
+        .h2{
+            font-size: 24px !important;
+        }
+    }
+    h3{
+        font-size: 20px !important;
+    }
+    h4{
+        font-size: 12px !important;
+    }
+    h5{
+        font-size: 18px !important;
+    }
+    h6{
+        font-size: 16px !important;
+    }
+    p{
+        font-size: 14px !important;
+    }
+    input{
+        padding: 5px 15px !important;
+    }
+    .dream_H0{
+        font-size: 38px !important;
+    }
+    .school{
+        font-size: 38px !important;
+    }
+    .clip{
+        font-size: 38px !important;
+    }
+    .numbertitle::after{
+        font-size: 200px !important;
+    }
+    #demo .venobtn .bigBtn{
+        padding: 6px 10px !important;
+        font-size: 14px !important;
+    }
+    #demo .venobtn .bigBtn .item15{
+        font-size: 8px !important;
+    }
+    .downBtn{
+        width: 50px !important;
+        height: 50px !important;
+    }
+    .mobileView{
+        right: -2% !important;
+    }
+    // feature----
+    .feature_item {
+        margin-top: 0 !important;
+        display: block;
+        margin: 0 auto !important;
+    }
+    // course-sowcase------
+    #course_showcase{
+        .leftSmall{
+            opacity: .2 !important;
+        }
+        .resp_clmn_rvrse{
+            display: flex !important;
+            flex-direction: column-reverse !important;
+        }
+        .slickImg{
+            img{
+                margin-left: 0 !important;
+            }
+        }
+        .Csli{
+            font-size: 16px !important;
+        }
+    }
+    // glob trusted-------
+    #glob_trusted{
+        .globtxt{
+            font-size: 38px !important;
+        }
+        .glTrusted{
+            padding: 7px 15px !important;
+            font-size: 14px !important;
+        }
+        .vloi{
+            margin: 25px 0 0 0 !important;
+        }
+        .support{
+            margin: 0 !important;
+            width: 100% !important;
+        }
+    }
+    // cluients---------
+    .clientItem{
+        min-width: 300px !important;
+    }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+    h1{
+        font-size: 38px !important;
+    }
+    h2{
+        font-size: 30px !important;
+        .h2{
+            font-size: 30px !important;
+        }
+    }
+    h3{
+        font-size: 24px !important;
+    }
+    h5{
+        font-size: 18px !important;
+    }
+    h6{
+        font-size: 16px !important;
+    }
+    p{
+        font-size: 15px !important;
+    }
+    input{
+        padding: 5px 15px !important;
+    }
+    .dream_H0{
+        font-size: 46px !important;
+    }
+    .school{
+        font-size: 46px !important;
+    }
+    .clip{
+        font-size: 46px !important;
+    }
+    .numbertitle::after{
+        font-size: 300px !important;
+    }
+    #demo .venobtn .bigBtn{
+        padding: 6px 10px !important;
+        font-size: 14px !important;
+    }
+    #demo .venobtn .bigBtn .item15{
+        font-size: 8px !important;
+    }
+    .downBtn{
+        width: 60px !important;
+        height: 60px !important;
+    }
+    .mobileView{
+        right: -2% !important;
+    }
+    // feature----
+    .feature_item {
+        margin-top: 0 !important;
+    }
+    // course-sowcase------
+    #course_showcase{
+        .leftSmall{
+            opacity: .2 !important;
+        }
+        .resp_clmn_rvrse{
+            display: flex !important;
+            flex-direction: column-reverse !important;
+        }
+        .slickImg{
+            img{
+                margin-left: 0 !important;
+            }
+        }
+        .Csli{
+            font-size: 16px !important;
+        }
+    }
+    // glob trusted-------
+    #glob_trusted{
+        .globtxt{
+            font-size: 46px !important;
+        }
+        .glTrusted{
+            padding: 9px 15px !important;
+            font-size: 16px !important;
+        }
+        .vloi{
+            margin: 30px 0 0 0 !important;
+        }
+        .support{
+            margin: 0 !important;
+            width: 100% !important;
+        }
+    }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+    h1{
+        font-size: 48px !important;
+    }
+    h2{
+        font-size: 30px !important;
+        .h2{
+            font-size: 30px !important;
+        }
+    }
+    h3{
+        font-size: 28px !important;
+    }
+    h5{
+        font-size: 20px !important;
+    }
+    h6{
+        font-size: 18px !important;
+    }
+    p{
+        font-size: 16px !important;
+    }
+    input{
+        padding: 7px 15px !important;
+    }
+    .dream_H0{
+        font-size: 56px !important;
+    }
+    .school{
+        font-size: 56px !important;
+    }
+    .clip{
+        font-size: 56px !important;
+    }
+    .numbertitle::after{
+        font-size: 400px !important;
+    }
+    #demo .venobtn .bigBtn{
+        padding: 8px 15px !important;
+        font-size: 14px !important;
+    }
+    #demo .venobtn .bigBtn .item15{
+        font-size: 8px !important;
+    }
+    .downBtn{
+        width: 60px !important;
+        height: 60px !important;
+    }
+    .mobileView{
+        right: -2% !important;
+    }
+    // course-sowcase------
+    #course_showcase{
+        .leftSmall{
+            opacity: .2 !important;
+        }
+        .resp_clmn_rvrse{
+            display: flex !important;
+            flex-direction: column-reverse !important;
+        }
+        .slickImg{
+            img{
+                margin-left: 0 !important;
+            }
+        }
+        .Csli{
+            font-size: 16px !important;
+        }
+    }
+    // glob trusted-------
+    #glob_trusted{
+        .globtxt{
+            font-size: 56px !important;
+        }
+        .glTrusted{
+            padding: 10px 17px !important;
+            font-size: 16px !important;
+        }
+        .vloi{
+            margin: 30px 0 0 0 !important;
+        }
+        .support{
+            margin: 0 !important;
+            width: 100% !important;
+        }
+    }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    h1{
+        font-size: 48px !important;
+    }
+    h2{
+        font-size: 30px !important;
+        .h2{
+            font-size: 30px !important;
+        }
+    }
+    h3{
+        font-size: 28px !important;
+    }
+    h5{
+        font-size: 20px !important;
+    }
+    h6{
+        font-size: 18px !important;
+    }
+    p{
+        font-size: 16px !important;
+    }
+    input{
+        padding: 7px 15px !important;
+    }
+    .dream_H0{
+        font-size: 56px !important;
+    }
+    .school{
+        font-size: 56px !important;
+    }
+    .clip{
+        font-size: 56px !important;
+    }
+    .numbertitle::after{
+        font-size: 400px !important;
+    }
+    #demo .venobtn .bigBtn{
+        padding: 8px 15px !important;
+        font-size: 14px !important;
+    }
+    #demo .venobtn .bigBtn .item15{
+        font-size: 8px !important;
+    }
+    .downBtn{
+        width: 60px !important;
+        height: 60px !important;
+    }
+    .mobileView{
+        right: -2% !important;
+    }
+    // course-sowcase------
+    #course_showcase{
+        .leftSmall{
+            opacity: .2 !important;
+        }
+        .resp_clmn_rvrse{
+            display: flex !important;
+            align-items: center !important;
+        }
+        .Csli{
+            font-size: 16px !important;
+        }
+    }
+    // glob trusted-------
+    #glob_trusted{
+        .globtxt{
+            font-size: 50px !important;
+        }
+        .glTrusted{
+            padding: 12px 20px !important;
+            font-size: 16px !important;
+        }
+        .vloi{
+            margin: 30px 0 0 0 !important;
+        }
+        .support{
+            margin: 0 !important;
+            width: 100% !important;
+        }
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1319.98px){
+    // course-sowcase------
+    #course_showcase{
+        .leftSmall{
+            opacity: .2 !important;
+        }
+        .resp_clmn_rvrse{
+            display: flex !important;
+            align-items: center !important;
+        }
+    }
+    // glob trusted-------
+    #glob_trusted{
+        .globtxt{
+            font-size: 60px !important;
+        }
+        .glTrusted{
+            padding: 14px 30px !important;
+        }
+        .vloi{
+            margin: 30px 0 0 0 !important;
+        }
+        .support{
+            margin: 0 !important;
+            width: 100% !important;
+        }
+    }
+}
+
+@media (min-width: 1320px){
+    // course-sowcase------
+    #course_showcase{
+        .leftSmall{
+            opacity: .2 !important;
+        }
+    }
+}

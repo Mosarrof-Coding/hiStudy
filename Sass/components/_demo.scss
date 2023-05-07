@@ -103,22 +103,26 @@
         display: block;
         position: relative;
         transition: all linear .3s;
+        border-radius: 10px;
         img{
             width: 100%;
+            display: block;
         }
         .mobileView{
-            max-width: 200px;
-            padding: 20px 5px;
+            width: 30%;
+            padding: 5% 2px;
             background: rgb(53, 25, 45);
             position: absolute;
             right: -5%;
-            top: 15%;
+            top: 50%;
+            transform: translateY(-50%);
             display: inline-block;
             box-shadow: -1px 1px 5px 0px #464646;
-            border-radius: 10px;
+            border-radius: 5%;
             transition: all linear .3s;
             img{
                 width: 100%;
+                display: block;
             }
             &::after{
                 position: absolute;
@@ -135,18 +139,20 @@
                 position: absolute;
                 content: "";
                 left: 50%;
-                bottom:.5%;
+                bottom: 0.7%;
                 transform: translateX(-50%);
-                width: 15px;
-                height: 15px;
+                width: 13%;
+                height: 6%;
                 border-radius:50%;
                 background: linear-gradient(90deg,#2d2d2d, #575757);
             }
         }
         &:hover{
             transform: translateY(-5px);
+            box-shadow: 1px 3px 7px 1px #e1e1e1;
             .mobileView{
-                top: 10%;
+                top: 50%;
+                transform: translateY(-60%);
             }
         }
     }

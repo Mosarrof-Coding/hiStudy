@@ -1,3 +1,10 @@
+@media (min-width: 991px) {
+    .navbar{
+        .navLeftCanvas{
+            display: none;
+        }
+    }
+}
 @media (max-width: 575px) {
     h1{
         font-size: 30px !important;

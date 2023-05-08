@@ -5,13 +5,28 @@
     z-index: 999;
     .navbar-brand{
         padding: 0 !important;
+        width: 140px;
         img{
-
+            background: transparent;
         }
     }
     .meToggler{
+        box-shadow: none !important;
+        outline: none !important;
+        border: none !important;
+        &:focus{
+            border: none !important;
+            outline: none !important;
+        }
         .mytggle{
-
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            .line{
+                width: 30px;
+                height: 2px;
+                background: $white;
+            }
         }
     }
     .me_collepse{
@@ -53,6 +68,282 @@
                 text-transform: capitalize;
                 transition: 0.3s;
                 margin-bottom: 0 !important;
+            }
+        }
+    }
+    .bannerBlure{
+        display: block;
+        width: 100%;
+        // height: 100%;
+        background: #222222dc;
+        position: fixed;
+        left: 0;
+        top:0;
+    }
+    .navLeftCanvas{
+        width: 350px;
+        height: 100vh;
+        display: block;
+        padding: 60px 30px;
+        background: $white;
+        position: fixed;
+        left: 0;
+        top: 0;
+        max-height: 100%;
+        overflow-y: scroll;
+        .canvInner{
+            .closeMe{
+                width: 100%;
+                padding: 10px 0;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background: #fff;
+                img{
+                    width: 120px;
+                }
+                i{
+                    color:#222;
+                    font-size: 30px;
+                }
+            }
+            .leftcanvas_p{
+                text-transform: capitalize;
+                font-size: 16px;
+                padding: 30px 0 20px;
+                line-height: 1.5;
+                font-weight: 400;
+                color:$black_6b7385;
+            }
+            .cContact{
+                .canvContact{
+                    display: block;
+                    color:$black_6b7385;
+                    i{
+                        margin-right: 5px;
+                        color:$black_6b7385;
+                    }
+                }
+            }
+            .pages{
+                padding: 50px 0;
+                .accordion-item{
+                    .accordion-button{
+                        border-bottom:1px solid $green !important;
+                        outline: none !important;
+                        box-shadow: none !important;
+                        background: none !important;
+                    }
+                    .accordion-header{
+                        .accordion-button{
+                            padding: 10px 0;
+                            text-transform: capitalize;
+                        }
+                    }
+                    .meAccCollapse{
+                        .accordion-body{
+                            max-height: 250px;
+                            overflow-y: scroll;
+                            ul{
+                                padding-left: 0;
+                                li{
+                                    display: block;
+                                    .canvAncor{
+                                        text-transform: capitalize;
+                                        padding: 8px 0;
+                                        display: block;
+                                        font-size: 16px;
+                                        font-weight: 500;
+                                        color:$ancor;
+                                        border-bottom: 1px solid $samewhite;
+                                    }
+                                }
+                                .a_rel{
+                                    display: flex;
+                                    justify-content: left;
+                                    align-items: center;
+                                    gap:5px;
+                                    border-bottom: 1px solid $samewhite;
+                                    .canvAncor{
+                                        border-bottom: none;
+                                    }
+                                    .newLap{
+                                        padding: 2px 10px;
+                                        background: conic-gradient( #0b71d0,#377fc3,#d737ac,#3803a2,#d040a5,#4999da,#0f74c6);
+                                        font-size: 9px;
+                                        text-transform: uppercase;
+                                        color:$white;
+                                        border-radius: 10px;
+                                    }
+                                }
+                                .cart{
+                                    background: $samewhite;
+                                    border-radius: 5px;
+                                    margin-top: 20px;
+                                    padding: 5px 20px;
+                                    .cart_Li{
+                                        display: flex;
+                                        align-items: center;
+                                        padding: 10px 0;
+                                        border-bottom: 1px solid $h4;
+                                        i{
+                                            margin-right: 5px;
+                                            color:$h4;
+                                        }
+                                    }
+                                    .cart_Li:nth-child(4){
+                                        border-bottom: none;
+                                    }
+                                }
+                                .megali_Item{
+                                    .eachLi{
+                                        padding: 15px 0 15px 10px;
+                                        text-transform: capitalize;
+                                        cursor: pointer;
+                                        &:hover{
+                                            color:$green;
+                                        }
+                                    }
+                                    .url1{
+                                        background: url(../images/category-2.png) no-repeat center/cover;
+                                    }
+                                    .url2{
+                                        background: url(../images/category-1.png);
+                                        background-position: right;
+                                        background-repeat: no-repeat;
+                                        background-size: cover;
+                                    }
+                                    .url3{
+                                        background: url(../images/category-4.png);
+                                        background-position: center;
+                                        background-repeat: no-repeat;
+                                        background-size: cover;
+                                    }
+                                    .url5{
+                                        background: url(../images/category-5.png);
+                                        background-position: center;
+                                        background-repeat: no-repeat;
+                                        background-size: cover;
+                                    }
+                                }
+                                .histudyBtn{
+                                    margin: 20px 0;
+                                    border: none;
+                                    display: block;
+                                    width: 100%;
+                                    border-radius: 10px;
+                                    overflow: hidden;
+                                    .hi_a{
+                                        width: 100%;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: space-evenly;
+                                        padding:15px 10px;
+                                        color:$white;
+                                        background: linear-gradient(to right, $green, $deepYellow);
+                                        text-transform: capitalize;
+                                    }
+                                }
+                                .blogImg{
+                                    border-radius: 10px;
+                                    overflow: hidden;
+                                }
+                            }
+                            .courseLayout{
+                                padding: 30px 20px;
+                                background: $h2;
+                                display: block;
+                                border-radius: 5px;
+                                .dhub{
+                                    text-transform: capitalize;
+                                    font-size: 18px;
+                                    font-weight: 500;
+                                    margin-bottom: 10px;
+                                    color:$white;
+                                }
+                                small{
+                                    text-transform: capitalize;
+                                    font-size: 14px;
+                                    font-weight: 300;
+                                    width: 60%;
+                                    color:$white;
+                                }
+                            }
+                            .hubTitle{
+                                text-transform: uppercase;
+                                font-size: 12px;
+                                font-weight: 600;
+                                letter-spacing: 0.5px;
+                                opacity: 0.5;
+                                margin-top: 30px;
+                                display: inline-block;
+                                border-bottom: 3px solid #000;
+                            }
+                            .getStarted{
+                                margin-top: 0px;
+                            }
+                            .marqueBox{
+                                width: 100%;
+                                height: 40px;
+                                background: linear-gradient(90deg, #CFA2E8, #637FEA);
+                                border-radius: 20px;
+                                overflow: hidden;
+                                position: relative;
+                                .overlap{
+                                    top: 3px;
+                                    left: 3px;
+                                    border-radius: 20px;
+                                    position: absolute;
+                                    background: #fff;
+                                    width: calc(100% - 6px);
+                                    height: calc(100% - 6px);
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                }
+                                .martxt{
+                                    display: inline-block;
+                                    color:$ancor;
+                                    font-size: 16px;
+                                    font-weight: 500;
+                                    line-height: 1;
+                                    text-transform: capitalize;
+                                    transition: 0.3s;
+                                    margin-bottom: 0 !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .hubTitle{
+                text-transform: uppercase;
+                font-size: 12px;
+                font-weight: 600;
+                letter-spacing: 0.5px;
+                opacity: 0.5;
+                margin-top: 30px;
+                display: inline-block;
+                border-bottom: 3px solid #000;
+            }
+            .s_icons{
+                display: flex;
+                justify-content: left;
+                gap:10px;
+                i{
+                    margin: 15px 0;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    border: 2px solid $green;
+                    display: grid;
+                    place-items: center;
+                    cursor: pointer;
+                    &:hover{
+                        background:$green;
+                        color:$white;
+                    }
+                }
             }
         }
     }

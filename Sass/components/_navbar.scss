@@ -2,6 +2,12 @@
 @import "../mixins/mixin";
 /*navbar part start--------------*/
 .navbar{
+    display: block;
+    width: 100%;
+    background: transparent;
+    position: absolute;
+    left: 0;
+    top: 0;
     z-index: 999;
     .navbar-brand{
         padding: 0 !important;
@@ -32,11 +38,108 @@
     .me_collepse{
         .me_nav_ul{
             .me_item_li{
+                position: relative;
                 .me_link_a{
                     display: inline-block;
                     padding: 20px 0;
                     margin: 0 20px;
                     text-transform: capitalize;
+                    position: relative;
+                    &:hover{
+                        color:#B561EC;
+                    }
+                }
+                &:hover{
+                    .megaMenu{
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+                .megaMenu{
+                    display: block;
+                    position: absolute;
+                    width: 1450%;
+                    left: -390%;
+                    top: 100%;
+                    background: rgb(14, 4, 56);
+                    padding: 40px 40px 20px;
+                    border-radius: 0 0 10px 10px;
+                    opacity: 0;
+                    visibility: hidden;
+                    .menuItem{
+                        position: relative;
+                        cursor: pointer;
+                        transition: all linear .3s;
+                        .megamenu_thumb{
+                            z-index: 2;
+                            img{
+                                display: block;
+                                border-radius: 10px;
+                            }
+                        }
+                        .menuTitle{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            gap:10px;
+                            text-transform: capitalize;
+                            padding-top: 5px;
+                            opacity: 0;
+                            visibility: hidden;
+                            transition: all linear .3s;
+                            .mega6{
+                                margin-bottom: 0;
+                                color:$white;
+                                text-transform: capitalize;
+                                font-weight: 600;
+                                font-size: 15px;
+                            }
+                            i{
+                                color:$white;
+                            }
+                        }
+                        &:hover{
+                            margin-top: -20px;
+                            .menuTitle{
+                                opacity: 1;
+                                visibility: visible;
+                                padding-bottom: 10px;
+                            }
+                        }
+                    }
+                    .mega2{
+                        background: url(../images/mega2jpg.png) no-repeat center/cover;
+                    }
+                }
+                &:hover{
+                    .me_link_a{
+                        color:#B561EC !important;
+                    }
+                }
+                .megaMenu2{
+                    position: absolute;
+                    left: 0;
+                    top: 100%;
+                    width: 550%;
+                    display: flex;
+                    background: red;
+                    border-radius: 10px 10px 0 0;
+                    overflow: hidden;
+                    .mega2{
+                        display: block;
+                        width: 100%;
+                        padding: 20px;
+                        background: url(../images/mega2jpg.png) no-repeat center/cover;
+                        h6{
+                            color:$white;
+                        }
+                        .dhub{
+                            color:$white;
+                            font-weight: 400;
+                            font-size: 14px;
+                            margin-bottom: 0;
+                        }
+                    }
                 }
             }
         }

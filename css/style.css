@@ -1,5 +1,11 @@
 /*navbar part start--------------*/
 .navbar {
+  display: block;
+  width: 100%;
+  background: transparent;
+  position: absolute;
+  left: 0;
+  top: 0;
   z-index: 999;
 }
 .navbar .navbar-brand {
@@ -28,11 +34,106 @@
   height: 2px;
   background: #ffffff;
 }
+.navbar .me_collepse .me_nav_ul .me_item_li {
+  position: relative;
+}
 .navbar .me_collepse .me_nav_ul .me_item_li .me_link_a {
   display: inline-block;
   padding: 20px 0;
   margin: 0 20px;
   text-transform: capitalize;
+  position: relative;
+}
+.navbar .me_collepse .me_nav_ul .me_item_li .me_link_a:hover {
+  color: #B561EC;
+}
+.navbar .me_collepse .me_nav_ul .me_item_li:hover .megaMenu {
+  opacity: 1;
+  visibility: visible;
+}
+.navbar .me_collepse .me_nav_ul .me_item_li .megaMenu {
+  display: block;
+  position: absolute;
+  width: 1450%;
+  left: -390%;
+  top: 100%;
+  background: rgb(14, 4, 56);
+  padding: 40px 40px 20px;
+  border-radius: 0 0 10px 10px;
+  opacity: 0;
+  visibility: hidden;
+}
+.navbar .me_collepse .me_nav_ul .me_item_li .megaMenu .menuItem {
+  position: relative;
+  cursor: pointer;
+  transition: all linear 0.3s;
+}
+.navbar .me_collepse .me_nav_ul .me_item_li .megaMenu .menuItem .megamenu_thumb {
+  z-index: 2;
+}
+.navbar .me_collepse .me_nav_ul .me_item_li .megaMenu .menuItem .megamenu_thumb img {
+  display: block;
+  border-radius: 10px;
+}
+.navbar .me_collepse .me_nav_ul .me_item_li .megaMenu .menuItem .menuTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-transform: capitalize;
+  padding-top: 5px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all linear 0.3s;
+}
+.navbar .me_collepse .me_nav_ul .me_item_li .megaMenu .menuItem .menuTitle .mega6 {
+  margin-bottom: 0;
+  color: #ffffff;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 15px;
+}
+.navbar .me_collepse .me_nav_ul .me_item_li .megaMenu .menuItem .menuTitle i {
+  color: #ffffff;
+}
+.navbar .me_collepse .me_nav_ul .me_item_li .megaMenu .menuItem:hover {
+  margin-top: -20px;
+}
+.navbar .me_collepse .me_nav_ul .me_item_li .megaMenu .menuItem:hover .menuTitle {
+  opacity: 1;
+  visibility: visible;
+  padding-bottom: 10px;
+}
+.navbar .me_collepse .me_nav_ul .me_item_li .megaMenu .mega2 {
+  background: url(../images/mega2jpg.png) no-repeat center/cover;
+}
+.navbar .me_collepse .me_nav_ul .me_item_li:hover .me_link_a {
+  color: #B561EC !important;
+}
+.navbar .me_collepse .me_nav_ul .me_item_li .megaMenu2 {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 550%;
+  display: flex;
+  background: red;
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+}
+.navbar .me_collepse .me_nav_ul .me_item_li .megaMenu2 .mega2 {
+  display: block;
+  width: 100%;
+  padding: 20px;
+  background: url(../images/mega2jpg.png) no-repeat center/cover;
+}
+.navbar .me_collepse .me_nav_ul .me_item_li .megaMenu2 .mega2 h6 {
+  color: #ffffff;
+}
+.navbar .me_collepse .me_nav_ul .me_item_li .megaMenu2 .mega2 .dhub {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 0;
 }
 .navbar .me_collepse .marqueBox {
   width: 150px;
@@ -331,7 +432,7 @@
 /*navbar part end----------------*/
 /*banner part start-------------*/
 #banner {
-  padding: 50px 0;
+  padding: 150px 0 50px 0;
   background: url(../images/bg-2.png) no-repeat center/cover;
   position: relative;
   z-index: 0;
@@ -448,7 +549,7 @@
 #banner .b_card {
   display: block;
   background: #7E63F6;
-  border-radius: 20px;
+  border-radius: 10px;
   margin: 50px 0;
   z-index: 55;
 }
@@ -478,7 +579,7 @@
   width: 100%;
   padding: 100px;
   padding: 30px;
-  border-radius: 20px;
+  border-radius: 10px;
   background: transparent;
   transition: all linear 0.3s;
   cursor: pointer;
@@ -739,7 +840,6 @@
 }
 #customise .layout_main .layout .ready .ready_li i {
   font-size: 20px;
-  margin-right: 10px;
 }
 #customise .layout_main .courses_layout .cl-png {
   display: none;
@@ -1180,7 +1280,7 @@
   font-weight: 400;
   color: #d5d5d5;
   letter-spacing: 0.05rem;
-  background: #f4f4f4;
+  background: #2c0324;
   padding: 3px 7px;
   border-radius: 7px;
 }
@@ -1764,6 +1864,7 @@
   }
   .clientItem {
     min-width: 300px !important;
+    padding: 10px 5px !important;
   }
 }
 @media (min-width: 576px) and (max-width: 767.98px) {

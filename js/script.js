@@ -1,15 +1,3 @@
-// let school = Array.from(document.querySelectorAll('.school'));
-// school.map((item, index)=>{
-//     item.addEventListener('onload', (nin)=>{
-//         setInterval(() => {
-//             nin.classList.remove('active');
-//         }, 2000);
-//     })
-//     setInterval(() => {
-//         school[index].classList.add('active');
-//     }, 2000);
-// })
-
 
 // demos mixitup-------------
 $(function(){
@@ -24,4 +12,13 @@ $(function(){
             effects: 'fade scale'
         }
     });
-})
+});
+
+// $('.boo').slick({
+//     infinite: true,
+//     slidesToShow: 1,
+//     slidesToScroll: 1,
+//     autoplay: true,
+//     autoplaySpeed: 2000,
+//     arrows:false,
+// });

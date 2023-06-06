@@ -35,7 +35,7 @@
   background: #ffffff;
 }
 .navbar .me_collepse .me_nav_ul .me_item_li {
-  position: relative;
+  position: static;
 }
 .navbar .me_collepse .me_nav_ul .me_item_li .me_link_a {
   display: inline-block;
@@ -51,12 +51,17 @@
   opacity: 1;
   visibility: visible;
 }
+.navbar .me_collepse .me_nav_ul .me_item_li:hover .megaMenu2 {
+  opacity: 1;
+  visibility: visible;
+}
 .navbar .me_collepse .me_nav_ul .me_item_li .megaMenu {
   display: block;
   position: absolute;
-  width: 1450%;
-  left: -390%;
-  top: 100%;
+  width: 95%;
+  left: 50%;
+  top: 90%;
+  transform: translateX(-50%);
   background: rgb(14, 4, 56);
   padding: 40px 40px 20px;
   border-radius: 0 0 10px 10px;
@@ -65,7 +70,6 @@
 }
 .navbar .me_collepse .me_nav_ul .me_item_li .megaMenu .menuItem {
   position: relative;
-  cursor: pointer;
   transition: all linear 0.3s;
 }
 .navbar .me_collepse .me_nav_ul .me_item_li .megaMenu .menuItem .megamenu_thumb {
@@ -74,6 +78,7 @@
 .navbar .me_collepse .me_nav_ul .me_item_li .megaMenu .menuItem .megamenu_thumb img {
   display: block;
   border-radius: 10px;
+  cursor: pointer;
 }
 .navbar .me_collepse .me_nav_ul .me_item_li .megaMenu .menuItem .menuTitle {
   display: flex;
@@ -112,13 +117,14 @@
 }
 .navbar .me_collepse .me_nav_ul .me_item_li .megaMenu2 {
   position: absolute;
-  left: 0;
-  top: 100%;
-  width: 550%;
-  display: flex;
-  background: red;
-  border-radius: 10px 10px 0 0;
+  left: 28%;
+  top: 90%;
+  width: 600px;
+  background: #ffffff;
+  border-radius: 10px;
   overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
 }
 .navbar .me_collepse .me_nav_ul .me_item_li .megaMenu2 .mega2 {
   display: block;
@@ -128,12 +134,53 @@
 }
 .navbar .me_collepse .me_nav_ul .me_item_li .megaMenu2 .mega2 h6 {
   color: #ffffff;
+  text-transform: capitalize;
 }
 .navbar .me_collepse .me_nav_ul .me_item_li .megaMenu2 .mega2 .dhub {
   color: #ffffff;
   font-weight: 400;
   font-size: 14px;
   margin-bottom: 0;
+}
+.navbar .me_collepse .me_nav_ul .me_item_li .megaMenu2 .cLayout {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+.navbar .me_collepse .me_nav_ul .me_item_li .megaMenu2 .cLayout .ulOne {
+  width: 50%;
+  padding-left: 0;
+  padding: 30px 20px;
+}
+.navbar .me_collepse .me_nav_ul .me_item_li .megaMenu2 .cLayout .ulOne h6 {
+  border-bottom: 1px solid #000;
+  text-transform: capitalize;
+  font-size: 12px;
+  padding-bottom: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  opacity: 0.5;
+  margin-bottom: 6px;
+}
+.navbar .me_collepse .me_nav_ul .me_item_li .megaMenu2 .cLayout .ulOne .layOne {
+  display: block;
+  margin-top: 15px;
+  padding: 0;
+}
+.navbar .me_collepse .me_nav_ul .me_item_li .megaMenu2 .cLayout .ulOne .layOne .acnorLayer {
+  font-weight: 500;
+  font-size: 15px;
+  color: var(--color-body);
+  margin: 0 10px;
+  border-radius: 4px;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.navbar .me_collepse .me_nav_ul .me_item_li .megaMenu2 .cLayout .ulOne .layOne .acnorLayer:hover {
+  color: #7E63F6;
 }
 .navbar .me_collepse .marqueBox {
   width: 150px;

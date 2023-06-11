@@ -14,11 +14,27 @@ $(function(){
     });
 });
 
-// $('.boo').slick({
-//     infinite: true,
-//     slidesToShow: 1,
-//     slidesToScroll: 1,
-//     autoplay: true,
-//     autoplaySpeed: 2000,
-//     arrows:false,
-// });
+// text-slider-banner
+$('.slide-inner').slick({
+    dots: true,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear',
+    arrows: false,
+    dots:false,
+    autoplay: true,
+    autoplatSpeed: 3000,
+  });
+
+//   mouse eventer banner======
+let banner = document.querySelector('.banner');
+
+banner.addEventListener('mousemove', function(mouse){
+    let float = Array.from(document.querySelectorAll('.float'));
+    // console.log(float);
+    float.map((run)=>{
+        run.style.left = mouse.pageX * (1/50) + 'px';
+        run.style.top = mouse.pageY * (1/50) + 'px';
+    })
+});

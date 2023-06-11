@@ -524,20 +524,22 @@
   color: #192335;
   font-weight: 700;
   word-break: break word;
-  flex-direction: column;
+  max-width: 500px;
+  height: 85px;
+  overflow: hidden;
+  margin-bottom: -18px;
 }
-#banner .dremType .dream_H0 .slide .school {
-  height: 100px;
-  display: none;
+#banner .dremType .dream_H0 .slide .slide-inner {
+  display: block;
+}
+#banner .dremType .dream_H0 .slide .slide-inner .school {
+  display: block;
   background: linear-gradient(90deg, rgba(255, 0, 0, 0.993), rgb(0, 128, 0));
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: rgba(6, 6, 6, 0.01);
   text-transform: capitalize;
   font-size: 72px;
-}
-#banner .dremType .dream_H0 .slide .school.active {
-  display: block;
 }
 #banner .studyBanner {
   width: 100%;

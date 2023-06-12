@@ -33,8 +33,8 @@ let banner = document.querySelector('.banner');
 banner.addEventListener('mousemove', function(mouse){
     let float = Array.from(document.querySelectorAll('.float'));
     // console.log(float);
-    float.map((run)=>{
-        run.style.left = mouse.pageX * (1/50) + 'px';
-        run.style.top = mouse.pageY * (1/50) + 'px';
+    float.map((index, item)=>{
+        index.parentElement.style.left = mouse.pageX * (1/50) + 'px';
+        index.parentElement.style.top = mouse.pageY * (1/50) + 'px';
     })
 });

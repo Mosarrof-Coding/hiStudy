@@ -511,7 +511,6 @@
   letter-spacing: 0.5px;
 }
 #banner .dremType .dream_H0 {
-  display: inline-block;
   font-size: 72px;
   line-height: 1.2;
   color: #192335;
@@ -534,7 +533,7 @@
 }
 #banner .dremType .dream_H0 .slide .slide-inner .school {
   display: block;
-  background: linear-gradient(90deg, rgba(255, 0, 0, 0.993), rgb(0, 128, 0));
+  background: linear-gradient(90deg, rgba(157, 5, 5, 0.993), rgb(39, 111, 247));
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: rgba(6, 6, 6, 0.01);

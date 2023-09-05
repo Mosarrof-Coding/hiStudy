@@ -524,7 +524,7 @@
   font-weight: 700;
   word-break: break word;
   max-width: 500px;
-  height: 85px;
+  max-height: 85px;
   overflow: hidden;
   margin-bottom: -18px;
 }
@@ -576,16 +576,6 @@
   bottom: 0;
   left: 78%;
   top: 78%;
-}
-#banner .studyBanner .fl4 {
-  display: inline-block;
-  width: 55px;
-  height: 80%;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 94%;
-  top: 10%;
 }
 #banner .studyBanner .fl5 {
   display: inline-block;
@@ -672,6 +662,16 @@
   height: 145px;
   display: block;
   z-index: -1;
+}
+#banner .fl4 {
+  display: inline-block;
+  width: 55px;
+  height: 60%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: calc(100% - 55px);
+  top: 10%;
 }
 
 /*banner part end---------------*/
@@ -1003,7 +1003,8 @@
   left: 0;
   top: 0;
   right: 0;
-  width: 500%;
+  width: -moz-fit-content;
+  width: fit-content;
   height: 100px;
   display: flex;
   animation: anim 80s linear infinite;
@@ -1046,17 +1047,17 @@
 }
 @keyframes anim {
   100% {
-    transform: translateX(-3800px);
+    transform: translateX(-50%);
   }
 }
 @keyframes anim1 {
   100% {
-    transform: translateX(-3800px);
+    transform: translateX(-50%);
   }
 }
 @keyframes anim2 {
   100% {
-    transform: translateX(-3800px);
+    transform: translateX(-50%);
   }
 }
 #plugin .awer {

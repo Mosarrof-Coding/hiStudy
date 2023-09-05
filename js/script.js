@@ -13,7 +13,6 @@ $(function(){
         }
     });
 });
-
 // text-slider-banner
 $('.slide-inner').slick({
     dots: true,
@@ -26,10 +25,8 @@ $('.slide-inner').slick({
     autoplay: true,
     autoplatSpeed: 3000,
   });
-
 //   mouse eventer banner======
 let banner = document.querySelector('.banner');
-
 banner.addEventListener('mousemove', function(mouse){
     let float = Array.from(document.querySelectorAll('.float'));
     // console.log(float);

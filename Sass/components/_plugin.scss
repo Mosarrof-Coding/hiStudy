@@ -39,7 +39,7 @@
             left: 0;
             top:0;
             right: 0;
-            width: 500%;
+            width: fit-content;
             height: 100px;
             display: flex;
             animation: anim 80s linear infinite;
@@ -82,17 +82,17 @@
         }
         @keyframes anim {
             100%{
-                transform: translateX(-3800px);
+                transform: translateX(-50%);
             }
         }
         @keyframes anim1 {
             100%{
-                transform: translateX(-3800px);
+                transform: translateX(-50%);
             }
         }
         @keyframes anim2 {
             100%{
-                transform: translateX(-3800px);
+                transform: translateX(-50%);
             }
         }
     }

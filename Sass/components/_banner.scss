@@ -47,7 +47,7 @@
                 font-weight: 700;
                 word-break: break word;
                 max-width: 500px;
-                height: 85px;
+                max-height: 85px;
                 overflow: hidden;
                 margin-bottom: -18px;
                 .slide-inner{
@@ -101,16 +101,6 @@
             bottom: 0;
             left: 78%;
             top: 78%;
-        }
-        .fl4{
-            display: inline-block;
-            width: 55px;
-            height: 80%;
-            position: absolute;
-            right: 0;
-            bottom: 0;
-            left: 94%;
-            top: 10%;
         }
         .fl5{
             display: inline-block;
@@ -192,6 +182,16 @@
         height: 145px;
         display: block;
         z-index: -1;
+    }
+    .fl4{
+        display: inline-block;
+        width: 55px;
+        height: 60%;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: calc(100% - 55px);
+        top: 10%;
     }
 }
 /*banner part end---------------*/

@@ -24,7 +24,7 @@ $('.slide-inner').slick({
     dots:false,
     autoplay: true,
     autoplatSpeed: 3000,
-  });
+});
 //   mouse eventer banner======
 let banner = document.querySelector('.banner');
 banner.addEventListener('mousemove', function(mouse){
